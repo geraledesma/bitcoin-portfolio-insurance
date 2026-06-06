@@ -24,14 +24,15 @@ Replace a static CPPI allocator with **`drawdown_allocator()`** — a dynamic al
 - `drawdown_allocator()` — core strategy; monitors peak and adjusts BTC/cash allocation dynamically
 - `bt_mix(btc, usdc, ...)` — backtester using the `erk` library (EDHEC Risk Institute)
 - Benchmark: CPPI allocator on the same BTC/USDC universe
+- Monte Carlo simulation comparing Fixed Mix, CPPI, and Drawdown Allocator across 500 scenarios
 
 ---
 
 ## Roadmap
 
-- [ ] Implement `drawdown_allocator()` strategy
-- [ ] Build `bt_mix(btc, usdc)` backtester
-- [ ] Backtest drawdown allocator vs. CPPI benchmark
+- [x] Implement `drawdown_allocator()` strategy
+- [x] Build `bt_mix(btc, usdc)` backtester
+- [x] Backtest drawdown allocator vs. CPPI benchmark
 - [ ] Document results and compare to floor allocator
 - [ ] Integrate with Hermes Agent execution stack (autonomous signal generation)
 
